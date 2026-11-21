@@ -141,6 +141,10 @@ export const translations = {
       description: "Quick answers about Skinner, safety, customization, and rollbacks.",
       items: [
         {
+          q: "How to get free skins in Brawlhalla using Skinner Studio?",
+          a: "Skinner Studio allows you to explore, preview, and equip all 790+ character costumes and 2,100+ weapon cosmetics directly in Brawlhalla for free on your PC. It operates 100% locally and includes an instant 1-click rollback button to restore original game files at any time."
+        },
+        {
           q: "Is Skinner safe to use with Brawlhalla?",
           a: "Yes. Skinner operates purely on local client-side visual assets (such as vector SWF files, stage backgrounds, and UI sprites). It does not hook game memory, alter netcode, or inject runtime cheats. All modifications are purely cosmetic."
         },
@@ -372,6 +376,10 @@ export const translations = {
       title: "الأسئلة الشائعة.",
       description: "إجابات واضحة ومباشرة حول برنامج Skinner، الأمان، التخصيص، وطريقة الاسترجاع.",
       items: [
+        {
+          q: "كيفية الحصول على سكنات براول هالا مجاناً عبر برنامج Skinner؟",
+          a: "يتيح لك برنامج Skinner استكشاف وتجهيز أي سكن من بين أكثر من 790+ سكن لجميع الأساطير الـ 70+ وأكثر من 2,100+ مظهر سلاح مجاناً بالكامل على حاسوبك الشخصي بنقرة زر واحدة، مع ميزة الاسترجاع الفوري للملفات الأصلية دون الحاجة لإعادة تحميل ملفات اللعبة."
+        },
         {
           q: "هل استخدام Skinner آمن مع لعبة Brawlhalla؟",
           a: "نعم. يعمل Skinner فقط وبشكل حصري على الملفات الرسومية المحلية من جانب العميل (Client-Side) مثل ملفات الفلاش SWF وخلفيات الساحات. لا يتدخل في ذاكرة اللعبة، ولا يعدل كود الشبكة، ولا يحقن أي برمجيات غش. جميع التعديلات شكلية وتجميلية فقط."
