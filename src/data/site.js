@@ -11,7 +11,7 @@ export const site = {
   githubRepo: "dahakabdellah12/Skinner",
   discordUrl: "https://discord.gg/NB6tunYEJ",
   discordGuildId: "1566047206081826886", // Official Skinner Discord Server
-  discordClientId: import.meta.env.VITE_DISCORD_CLIENT_ID || "",
+  discordClientId: (typeof import.meta !== "undefined" && import.meta.env && import.meta.env.VITE_DISCORD_CLIENT_ID) || "",
   supportEmail: "contact@skinner.app",
   lastUpdated: "November 2026"
 };

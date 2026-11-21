@@ -1,4 +1,25 @@
-User-agent: *
+# Allow legitimate search engine crawlers
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: DuckDuckBot
+User-agent: YandexBot
 Allow: /
 
-Sitemap: /sitemap.xml
+# Defensive policy against aggressive commercial/AI scrapers to protect bandwidth
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: MJ12bot
+User-agent: DotBot
+User-agent: PetalBot
+User-agent: Bytespider
+User-agent: CCBot
+Disallow: /
+
+# Default policy for all other crawlers
+User-agent: *
+Allow: /
+Crawl-delay: 5
+
+Sitemap: https://skinner-app.vercel.app/sitemap.xml
