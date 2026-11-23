@@ -80,41 +80,20 @@ export const translations = {
       ]
     },
     communityPage: {
-      eyebrow: "COMMUNITY & ACCESS",
-      title: "100% Free Community Studio.",
-      description: "Skinner is completely free for the entire Brawlhalla community. Enjoy unlimited access to all features, costumes, weapons, and map addons.",
-      plans: [
-        {
-          name: "Community Edition",
-          price: "$0",
-          period: "free forever",
-          description: "The complete Skinner studio experience for every Brawlhalla player.",
-          features: [
-            "All 70+ Legends & 790+ costumes",
-            "Independent Weapon Studio (all 14 types)",
-            "Authentic KO Effects Customizer",
-            "GameBanana Community Maps Installer",
-            "Bit-exact atomic rollbacks & backups",
-            "Cryptographically signed auto-updater",
-            "Sub-millisecond game detection"
-          ],
-          buttonText: "Download Free"
-        },
-        {
-          name: "Community Supporter",
-          price: "★",
-          period: "voluntary support",
-          description: "Support the ongoing development of Skinner and help the community grow.",
-          features: [
-            "Star the repository on GitHub",
-            "Join the community Discord",
-            "Submit feature suggestions & feedback",
-            "Help test pre-release builds",
-            "Contribute ideas for new tools"
-          ],
-          buttonText: "Star on GitHub"
-        }
-      ]
+      eyebrow: "COMMUNITY SUPPORTER",
+      title: "Support Skinner Studio.",
+      description: "Skinner is 100% free and open-source for the entire Brawlhalla community. You can help our project grow and support future updates.",
+      supporterTitle: "Community Supporter",
+      supporterDesc: "No payments or subscriptions required. Your star on GitHub and active participation in our Discord community help us develop new features, skins, and modding tools.",
+      features: [
+        "Star the repository on GitHub",
+        "Join our active community Discord",
+        "Suggest new skins, legends & features",
+        "Help test early experimental builds",
+        "Share feedback and report issues"
+      ],
+      starBtn: "Star on GitHub",
+      discordBtn: "Join Discord"
     },
     downloadPage: {
       eyebrow: "DOWNLOAD SKINNER",
@@ -316,41 +295,20 @@ export const translations = {
       ]
     },
     communityPage: {
-      eyebrow: "المجتمع والوصول",
-      title: "استوديو مجاني بالكامل 100%.",
-      description: "برنامج Skinner مجاني تماماً لكافة لاعبي مجتمع Brawlhalla. استمتع بوصول غير محدود لجميع الميزات، السكنات، الأسلحة، وإضافات الخرائط.",
-      plans: [
-        {
-          name: "نسخة المجتمع (Community Edition)",
-          price: "$0",
-          period: "مجاني للأبد",
-          description: "تجربة استوديو Skinner الكاملة والمجانية لجميع لاعبي اللعبة.",
-          features: [
-            "كافة الـ 70+ أسطورة و 790+ سكن",
-            "استوديو الأسلحة المستقل (جميع الـ 14 نوعاً)",
-            "مخصص تأثيرات الإطاحة (KO) الأصلية",
-            "مثبت خرائط وساحات مجتمع GameBanana",
-            "نسخ احتياطي واسترجاع فوري دقيق بنقرة واحدة",
-            "محدث تلقائي موقّع رقمياً بتشفير Ed25519",
-            "كشف لحظي للعبة بأقل من جزء من المللي ثانية"
-          ],
-          buttonText: "تحميل مجاني"
-        },
-        {
-          name: "داعم المجتمع (Community Supporter)",
-          price: "★",
-          period: "دعم معنوي واختياري",
-          description: "ساهم في دعم تطوير Skinner ومساعدة مجتمع اللعبة على النمو.",
-          features: [
-            "وضع نجمة للمستودع على GitHub",
-            "الانضمام لمجتمع ديسكورد والمشاركة في النقاشات",
-            "اقتراح ميزات وأفكار جديدة للتحديثات القادمة",
-            "المساعدة في اختبار النسخ التجريبية",
-            "الإبلاغ عن المشاكل والملاحظات التقنية"
-          ],
-          buttonText: "نجمة على GitHub"
-        }
-      ]
+      eyebrow: "داعم المجتمع",
+      title: "دعم مشروع Skinner Studio.",
+      description: "برنامج Skinner مجاني تماماً 100% ومفتوح المصدر لكافة لاعبي مجتمع Brawlhalla. يمكنك المساهمة في دعم نمو المشروع واستمرار التحديثات.",
+      supporterTitle: "داعم المجتمع (Community Supporter)",
+      supporterDesc: "لا توجد أي اشتراكات أو مدفوعات مطلوبة. نجمتك على مستودع GitHub وتفاعلك داخل مجتمع ديسكورد يساعدنا على تطوير ميزات جديدة وسكنات وأدوات تخصيص متقدمة.",
+      features: [
+        "وضع نجمة (Star) للمستودع على GitHub",
+        "الانضمام لمجتمع ديسكورد والمشاركة في النقاشات",
+        "اقتراح سكنات وميزات جديدة للأساطير والأسلحة",
+        "المساعدة في اختبار التحديثات التجريبية المبكرة",
+        "مشاركة الملاحظات والإبلاغ عن الأخطاء التقنية"
+      ],
+      starBtn: "نجمة على GitHub",
+      discordBtn: "انضم للديسكورد"
     },
     downloadPage: {
       eyebrow: "تحميل SKINNER",

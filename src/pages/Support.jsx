@@ -24,7 +24,7 @@ export default function Support() {
         <h3>{s.discordTitle}</h3>
         <p>{s.discordDesc}</p>
         <div className="discord-action">
-          <Button href={site.discordUrl} target="_blank" rel="noreferrer" variant="primary">
+          <Button href={site.discordUrl} target="_blank" rel="noopener noreferrer" variant="primary">
             {s.discordBtn} <ExternalLink size={16} />
           </Button>
         </div>

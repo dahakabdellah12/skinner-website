@@ -89,7 +89,7 @@ export default function Home() {
             >
               <div className="real-app-screen">
                 <img
-                  src="/images/preview-customizer.png"
+                  src="https://i.ibb.co/nM7PTn1f/preview-customizer.png"
                   alt="Skinner UI Preview"
                   className="real-app-img"
                   draggable={false}

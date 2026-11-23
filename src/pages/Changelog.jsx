@@ -35,7 +35,7 @@ export default function Changelog() {
         ))}
       </div>
       <div style={{ textAlign: "center", marginTop: "32px" }}>
-        <Button href={site.githubUrl} variant="secondary" target="_blank" rel="noreferrer">
+        <Button href={site.githubUrl} variant="secondary" target="_blank" rel="noopener noreferrer">
           {c.githubBtn} <ExternalLink size={14} />
         </Button>
       </div>

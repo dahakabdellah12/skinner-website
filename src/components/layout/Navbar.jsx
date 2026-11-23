@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useLanguage } from "../../context/LanguageContext";
 import { FlagSA, FlagUS } from "../common/FlagIcons";
 
@@ -42,7 +42,7 @@ export default function Navbar() {
       <nav className="navbar container">
         <div className="brand brand-static" aria-label="Skinner">
           <span className="brand-mark brand-mark-transparent">
-            <img src="/logo.png" alt="Skinner" style={{ width: "30px", height: "30px", objectFit: "contain" }} />
+            <img src="https://i.ibb.co/kss0dnZ4/logo.png" alt="Skinner" style={{ width: "30px", height: "30px", objectFit: "contain" }} />
           </span>
           <span className="brand-title">Skinner</span>
         </div>
@@ -61,44 +61,44 @@ export default function Navbar() {
         </div>
 
         <div className="nav-actions">
-          {/* Custom Language Flag Dropdown */}
-          <div className="lang-dropdown-wrap" ref={langDropdownRef}>
+          {/* Minimal Language Flag Button */}
+          <div className="lang-wrap" ref={langDropdownRef}>
             <button
               type="button"
-              className={`lang-dropdown-trigger ${isLangOpen ? "open" : ""}`}
+              className="lang-flag-btn"
               onClick={() => setIsLangOpen(!isLangOpen)}
               aria-expanded={isLangOpen}
-              aria-label="Select language"
+              aria-label="Change language"
             >
-              {lang === "ar" ? <FlagSA size={21} /> : <FlagUS size={21} />}
-              <ChevronDown size={13} className={`lang-chevron ${isLangOpen ? "open" : ""}`} />
+              {lang === "ar" ? <FlagSA size={24} /> : <FlagUS size={24} />}
             </button>
 
             {isLangOpen && (
-              <div className="lang-dropdown-menu">
+              <div className="lang-popover-menu">
                 <button
                   type="button"
-                  className={`lang-option ${lang === "en" ? "active" : ""}`}
+                  className={`lang-popover-item ${lang === "ar" ? "active" : ""}`}
+                  onClick={() => {
+                    setLang("ar");
+                    setIsLangOpen(false);
+                  }}
+                  aria-label="العربية"
+                >
+                  <FlagSA size={20} />
+                  <span>العربية</span>
+                </button>
+
+                <button
+                  type="button"
+                  className={`lang-popover-item ${lang === "en" ? "active" : ""}`}
                   onClick={() => {
                     setLang("en");
                     setIsLangOpen(false);
                   }}
                   aria-label="English"
-                  title="English"
                 >
-                  <FlagUS size={24} />
-                </button>
-                <button
-                  type="button"
-                  className={`lang-option ${lang === "ar" ? "active" : ""}`}
-                  onClick={() => {
-                    setLang("ar");
-                    setIsLangOpen(false);
-                  }}
-                  aria-label="Arabic"
-                  title="العربية"
-                >
-                  <FlagSA size={24} />
+                  <FlagUS size={20} />
+                  <span>English</span>
                 </button>
               </div>
             )}
@@ -131,25 +131,27 @@ export default function Navbar() {
           <div className="mobile-lang-row">
             <button
               type="button"
-              className={`lang-option ${lang === "en" ? "active" : ""}`}
+              className={`mobile-lang-bare ${lang === "ar" ? "active" : ""}`}
+              onClick={() => {
+                setLang("ar");
+                close();
+              }}
+              aria-label="العربية"
+            >
+              <FlagSA size={22} />
+              <span>العربية</span>
+            </button>
+            <button
+              type="button"
+              className={`mobile-lang-bare ${lang === "en" ? "active" : ""}`}
               onClick={() => {
                 setLang("en");
                 close();
               }}
               aria-label="English"
             >
-              <FlagUS size={26} />
-            </button>
-            <button
-              type="button"
-              className={`lang-option ${lang === "ar" ? "active" : ""}`}
-              onClick={() => {
-                setLang("ar");
-                close();
-              }}
-              aria-label="Arabic"
-            >
-              <FlagSA size={26} />
+              <FlagUS size={22} />
+              <span>English</span>
             </button>
           </div>
         </div>
