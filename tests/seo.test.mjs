@@ -43,6 +43,6 @@ test("SEO Audit - robots.txt and sitemap.xml", () => {
   assert.ok(fs.existsSync(sitemapPath), "sitemap.xml must exist");
   const sitemap = fs.readFileSync(sitemapPath, "utf-8");
   assert.match(sitemap, /<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">/, "sitemap must have valid xml namespace");
-  assert.match(sitemap, /<loc>\/download<\/loc>/, "sitemap must include /download");
-  assert.match(sitemap, /<loc>\/features<\/loc>/, "sitemap must include /features");
+  assert.match(sitemap, /<loc>https:\/\/skinner-app\.vercel\.app\/download<\/loc>/, "sitemap must include /download with absolute url");
+  assert.match(sitemap, /<loc>https:\/\/skinner-app\.vercel\.app\/features<\/loc>/, "sitemap must include /features with absolute url");
 });
