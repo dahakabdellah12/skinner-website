@@ -31,8 +31,8 @@ export default function Footer() {
           </div>
           <div className="footer-column">
             <h4>{f.community}</h4>
-            <a href={site.discordUrl} target="_blank" rel="noreferrer">Discord <ExternalLink size={13} /></a>
-            <a href={site.githubUrl} target="_blank" rel="noreferrer">GitHub <ExternalLink size={13} /></a>
+            <a href={site.discordUrl} target="_blank" rel="noopener noreferrer">Discord <ExternalLink size={13} /></a>
+            <a href={site.githubUrl} target="_blank" rel="noopener noreferrer">GitHub <ExternalLink size={13} /></a>
             <Link to="/support">{f.support}</Link>
           </div>
           <div className="footer-column">

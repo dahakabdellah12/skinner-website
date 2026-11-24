@@ -30,7 +30,7 @@ export default function PlanCard({ plan }) {
           className="button button-secondary full-button"
           href={site.githubUrl}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <Star size={16} /> {plan.buttonText || "Star on GitHub"}
         </a>
